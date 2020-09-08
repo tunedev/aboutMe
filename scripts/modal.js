@@ -36,6 +36,12 @@ $(document).ready(function () {
         'Online shop is a code along project with wesbos advance react app that i intend to extend to look like https://mnml.la/.',
       link: 'https://github.com/tunedev/Online_shop_backend',
     },
+    qustomar: {
+      title: 'Qustomar',
+      tag: 'Issue tracker',
+      detail:
+        'An issue ticketing platform that enables companies to track their SLA’s and other issues from start to finish seamlessly.',
+    },
   };
 
   $('#gallery .button').on('click', function () {

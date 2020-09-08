@@ -56,9 +56,6 @@ $(function () {
     if (pos2 > $('#portfolio').offset().top) {
       highlightLink('portfolio');
     }
-    if (pos2 > $('#blog').offset().top) {
-      highlightLink('blog');
-    }
     if (
       pos2 > $('#contact').offset().top ||
       pos + $(window).height() === $(document).height()
@@ -106,16 +103,16 @@ $(function () {
     $('.link-wrap').toggleClass('visible');
   });
 
-  $('.blog-wrap').hover(
-    function () {
-      $('.blog-wrap').not(this).addClass('fade');
-      $(this).addClass('hover');
-    },
-    function () {
-      $(this).removeClass('hover');
-      $('.blog-wrap').removeClass('fade');
-    }
-  );
+  // $('.blog-wrap').hover(
+  //   function () {
+  //     $('.blog-wrap').not(this).addClass('fade');
+  //     $(this).addClass('hover');
+  //   },
+  //   function () {
+  //     $(this).removeClass('hover');
+  //     $('.blog-wrap').removeClass('fade');
+  //   }
+  // );
 
   posFilterBar($('.filter').first());
 
